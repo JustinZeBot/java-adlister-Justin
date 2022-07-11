@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello-world")
+@WebServlet(name = "HelloWorldServlet", urlPatterns = "/java_adlister_Justin_war_exploded/initial")
 public class HelloWorldServlet extends HttpServlet {
 
     @Override
@@ -14,7 +14,7 @@ public class HelloWorldServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
         String html ="<h2> About us </h2>";
-        html += "<a hre='/contact-us'></a>";
+        html += "<a href='/contact-us'></a>";
         out.println(html);
     }
 
